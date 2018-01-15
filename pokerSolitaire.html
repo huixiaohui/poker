@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Poker Solitaire</title>
+
+<link rel="stylesheet" type="text/css" href="pokerSolitaire.css">
+   <style>
+       div#all{
+           width: 960px;
+           margin: 0 auto;
+       }
+    img{
+        width: 65px;
+        height: 90px;
+    }
+    </style>
+</head>
+
+<body>
+   <div id="all">
+    <table>
+        <tr>
+            <td colspan="2"><h1>Poker Solitaire</h1></td>
+            <td><img id="card1" src="blank.png"></td>
+            <td><img id="card2" src="blank.png"></td>
+            <td><img id="card3" src="blank.png"></td>
+            <td><img id="card4" src="blank.png"></td>
+            <td><img id="card5" src="blank.png"></td>
+            <td class="score" id="row0"></td>       <!-- 第一行计分域-->
+        </tr>
+        <tr>
+            <td colspan="2"><img id="dcard" border="0" src="blank.png"></td>
+            
+            <td><img id="card6" src="blank.png"></td>
+            <td><img id="card7" src="blank.png"></td>
+            <td><img id="card8" src="blank.png"></td>
+            <td><img id="card9" src="blank.png"></td>
+            <td><img id="card10" src="blank.png"></td>
+            <td class="score" id="row1"></td>       <!-- 第二行计分域-->
+        </tr>
+        <tr>
+            <td colspan="2" valign="top" id="status">Next card</td>
+            <td><img id="card11" src="blank.png"></td>
+            <td><img id="card12" src="blank.png"></td>
+            <td><img id="card13" src="blank.png"></td>
+            <td><img id="card14" src="blank.png"></td>
+            <td><img id="card15" src="blank.png"></td>
+            <td class="score" id="row2"></td>       <!-- 第三行计分域-->
+        </tr>
+        <tr>
+            <td colspan="2" id="total">
+                <b>Total Score</b>
+                <div id="totalscore">0</div>
+             </td>
+            <td><img id="card16" src="blank.png"></td>
+            <td><img id="card17" src="blank.png"></td>
+            <td><img id="card18" src="blank.png"></td>
+            <td><img id="card19" src="blank.png"></td>
+            <td><img id="card20" src="blank.png"></td>
+            <td class="score" id="row3"></td>       <!-- 第四行计分域-->
+        </tr>
+        <tr>
+            <td colspan="2"><button id="newgame">重新游戏</button></td>
+            <td><img id="card21" src="blank.png"></td>
+            <td><img id="card22" src="blank.png"></td>
+            <td><img id="card23" src="blank.png"></td>
+            <td><img id="card24" src="blank.png"></td>
+            <td><img id="card25" src="blank.png"></td>
+            <td class="score" id="row4"></td>       <!-- 第五行计分域-->
+        </tr>
+        <td></td>
+        <td class ="score" id="diag1"></td>   <!-- 对角线计分区-->
+        <td class="score" id="col0"></td>      <!-- 第一列计分区，一次类推-->
+        <td class="score" id="col1"></td>
+        <td class="score" id="col2"></td>
+        <td class="score" id="col3"></td>
+        <td class="score" id="col4"></td>
+        <td class ="score" id="diag2"></td>     <!-- 另一条对角线计分区-->
+    </table>
+    <section>
+        <h1>游戏规则</h1>
+        <p>
+            <li>
+                <ol>Pair(对子)———— 1分(数字相同但花色不同的2张牌)</ol>
+                <ol>Two Pair(双对子)———— 2分(2对花色相同的牌)</ol>
+                <ol>Three of a kind(三条)———— 3分(3张数字相同的牌)</ol>
+                <ol>Straight(顺子)———— 4分(5张数字连续的牌)</ol>
+                <ol>Full house(葫芦)———— 8分(1对加上3张数字相同的牌)</ol>
+                <ol>Four of a kind(铁支)———— 25分(4张数字相同的牌)</ol>
+                <ol>Flush(同花)————5分(5张花色相同的牌)</ol>
+                <ol>Straight flush(同花顺)————50分(5张花色相同且数字连续的牌)</ol>
+                <ol>Roya flush(同花大顺)————250分(花色相同的10、J、Q、K 和 A)</ol>
+            </li>
+        </p>     
+    </section>
+    </div>
+    <script src="pokerSolitaire.js"></script>
+</body>
+</html>
